@@ -15,4 +15,59 @@ body{
     font-family: 'League Spartan', sans-serif;
 }
 
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0;
+    overflow: hidden;
+}
 
+.main{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, max-content);
+    grid-template-areas:
+    "main"
+    "buy"
+    "image1"
+    "about"
+    "image2";
+}
+
+.main__hero{
+    min-height: 500px;
+    background: url("../images/desktop-image-hero-1.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-area: main;
+}
+
+.main__nav{
+    display: flex;
+}
+
+.main__links{
+    display: none;
+}
+
+.main__logo{
+    margin: 0 auto;
+}
+
+.main__controls{
+    justify-self: end;
+    align-self: end;
+    grid-area: main;
+    background-color: #000;
+    display: flex;
+    width: 100px;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main__arrows{
+    height: 40%;
+}
